@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人展示 - 我的个人网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .personal-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .personal-info {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-title {
+            color: #34495e;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+        }
+        
+        .info-item h4 {
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        
+        .info-item p {
+            color: #7f8c8d;
+        }
+        
+        .personal-photo {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .achievement-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .achievement-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        .achievement-item h4 {
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+        
+        .achievement-item p {
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        
+        .personal-description {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .description-title {
+            color: #34495e;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .description-content {
+            color: #7f8c8d;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 30px;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .back-to-home a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .personal-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="LOGO" class="logo">
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="welcome.html">首页</a></li>
+                <li><a href="learning.html">学习方法</a></li>
+                <li><a href="personal.html">个人展示</a></li>
+                <li><a href="resources.html">学习资源</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+        
+        <h1 class="page-title">个人展示</h1>
+        
+        <div class="personal-container">
+            <div class="personal-info">
+                <h2 class="info-title">个人信息</h2>
+                <div class="info-item">
+                    <h4>姓名</h4>
+                    <p>张茗苠</p>
+                </div>
+                <div class="info-item">
+                    <h4>班级</h4>
+                    <p>环卓2401</p>
+                </div>
+                <div class="info-item">
+                    <h4>学号</h4>
+                    <p>U202415257</p>
+                </div>
+                <div class="info-item">
+                    <h4>联系方式</h4>
+                    <p>18907739875</p>
+                </div>
+                <div class="info-item">
+                    <h4>个人照片</h4>
+                    <img src="images/personal-photo.jpg" alt="个人照片" class="personal-photo">
+                </div>
+                <div class="info-item">
+                    <h4>学习成就</h4>
+                    <ul class="achievement-list">
+                        <li class="achievement-item">
+                            <h4>完成多门在线课程</h4>
+                            <p>在Coursera和edX等平台完成了多门专业课程，并获得了相应证书。</p>
+                        </li>
+                        <li class="achievement-item">
+                            <h4>开发实践项目</h4>
+                            <p>成功开发了多个网站和应用程序，将所学知识应用于实际项目中。</p>
+                        </li>
+                        <li class="achievement-item">
+                            <h4>参与开源项目</h4>
+                            <p>在GitHub上参与了多个开源项目的开发和维护，提升了团队协作能力。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="personal-description">
+                <h2 class="description-title">个人简介</h2>
+                <p class="description-content">
+                    我叫张茗苠，来自环卓2401班，是一名对网络学习充满热情的学生。我致力于通过网络学习不断提升自己的专业技能和知识水平。在网络学习的旅程中，我不仅获取了大量的知识，还结识了许多志同道合的朋友。
+                </p>
+                <p class="description-content">
+                    我热衷于探索各种高效的学习方法和资源，通过在线课程、学习社区和各种学习应用程序来拓展自己的视野和技能。我喜欢将所学知识应用到实际项目中，通过实践来巩固和加深理解。
+                </p>
+                <p class="description-content">
+                    除了学习，我还喜欢阅读、运动和音乐。这些兴趣爱好让我在学习之余能够放松身心，保持良好的状态。
+                </p>
+            </div>
+        </div>
+        
+        <div class="back-to-home">
+            <a href="welcome.html">返回首页</a>
+        </div>
+        
+        <footer>
+            <p>© 2023 我的个人网站. 保留所有权利.</p>
+        </footer>
+    </div>
+</body>
+</html>
